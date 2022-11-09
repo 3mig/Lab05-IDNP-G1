@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoPostulante">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-40dp">
+
+        <EditText
+            android:id="@+id/dniBusqueda"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese su DNI"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#EAEAEF"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.226" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="113dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button_rounded"
+            android:text="Buscar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.846"
+            app:layout_constraintStart_toEndOf="@+id/dniBusqueda"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_rounded"
+            android:text="Ir a menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDatos"
+            app:layout_constraintVertical_bias="0.282" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Busqueda por DNI"
+            android:textColor="#190808"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDatos"
+            android:layout_width="319dp"
+            android:layout_height="382dp"
+            android:textColor="#FFFDFD"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.503" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_cancel_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

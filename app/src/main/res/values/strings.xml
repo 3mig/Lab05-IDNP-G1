@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab03-IDNP</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="postulaci_n_2022">POSTULACIÓN 2022</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="ingresar">Ingresar</string>
+</resources>
